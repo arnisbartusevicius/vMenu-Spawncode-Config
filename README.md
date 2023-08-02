@@ -14,7 +14,7 @@ A Python File which lets you select your own [vehicles] folder for your FiveM se
 
 - Open Command Prompt With Administrative Privileges
 
-- Run the following commands
+- Run The Following Command:
 
 ```bash
   pip install easygui
