@@ -1,7 +1,7 @@
 
 # vMenu Spawncode Config
 
-A Python File which lets you select your own [vehicles] folder for your FiveM server and it will automatically print out every vehicle there formatted so that you can add it to your vMenu config file which lets you spawn your vehicles through vMenu.
+A Python File which lets you select your own [vehicles] folder for your FiveM server and it will automatically **print out every vehicle** there **formatted so** that **you can add it to your vMenu config** file which lets you spawn your vehicles through vMenu.
 ## Features
 
 - **No Setup** Required
