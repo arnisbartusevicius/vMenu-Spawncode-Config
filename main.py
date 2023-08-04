@@ -1,5 +1,6 @@
 import os # Lets us access files and directories
 import easygui # Lets the user select a directory
+import pyperclip # Lets us copy text to clipboard
 folder_path = easygui.diropenbox() # Lets user select the [vehicles] path
 new_file_names = set() # Creates a set named "new_file_names"
 
@@ -16,9 +17,11 @@ for root, dirs, files in os.walk(folder_path): # For each folder and file inside
                 new_file_names.add(os.path.splitext(os.path.basename(file_name))[0]) # Add the file name to the set
 
 new_file_names = sorted(set([x for x in new_file_names if not x.endswith("_hi")])) # Remove duplicate files from the set
-print(",\n".join(['"' + name + '"' for name in new_file_names])) # Print out new list of file names in the specified format with a new line after each comma
+output = ",\n".join(['"' + name + '"' for name in new_file_names]) # Makes a variable output which has a list of file names in the specified format with a new line after each comma
+pyperclip.copy(output) # Copies the output to the clipbaord
+print(f"{output}\n Output has been copied to the clipboard.") # Prints the output and that the output has been copied.
 
 while True: # Repeats the code
-    quit = input("Would you like to exit? [Y/N]: ").upper() # Asks the user to type y or n and converts the input to uppercase
-    if quit == "Y": # If the user typed "Y":
+    user_input = input("Would you like to exit? [Y/N]: ").upper() # Asks the user to type y or n and converts the input to uppercase
+    if user_input == "Y": # If the user typed "Y":
         quit() # Quits the program
