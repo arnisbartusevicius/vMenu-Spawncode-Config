@@ -10,18 +10,18 @@ A Python File which lets you select your own [vehicles] folder for your FiveM se
 - **Optimized Code**
 ## Installation
 
-- Install Python3 Here: https://www.python.org/downloads/
+- Install **Python 3** [Here](https://www.python.org/downloads/)
 
-- Open Command Prompt With Administrative Privileges
+- Install The **vMenu Spawncode Config .exe** [Here](https://github.com/arnisbartusevicius/Image-Saver/releases/)
 
-- Run The Following Command:
+- Run The .exe And **Select The Directory Containing All Your Vehicles** (Usually Your [vehicles] Folder)  
 
-```bash
-  pip install easygui
-```
+- Copy The Output And Put It In Your vMenu Config File.
 ## Feedback
 
-If you have any feedback, please reach out to me at arnisbartusevicius@proton.me
+If you have any feedback, please reach out to me at arnisbartusevicius@proton.me 
+
+Alternatively you can reach out to me on [Discord](https://discord.com/): @_arnis
 
 
 ## Authors
